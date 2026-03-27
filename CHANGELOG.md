@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.1] - 2026-03-27
+
+### Changed
+
+- Bumped `embassy-net` from `0.8.0` to `0.9.0`.
+- Bumped `embassy-time` from `0.5.0` to `0.5.1`.
+- Bumped `heapless` from `0.9.1` to `0.9.2`.
+- Bumped `futures-lite` from `2.0` to `2.6`.
+- Bumped MSRV to `1.91` (required by `heapless` 0.9.2 and `smoltcp` 0.13.0).
+- Updated `Makefile` to use `rust-version` from `Cargo.toml` and align with CI workflows.
+- Updated GitHub Actions workflows to use `actions/checkout@v5` and `actions/cache@v5` (Node.js 24 compatible).
+
 ## [0.11.0] - 2026-03-14
 
 ### Changed
@@ -131,8 +143,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS, TRACE, and CONNECT methods.
 - Configurable client options (retries, timeouts, delays).
 
-[Unreleased]: https://github.com/rttfd/nanofish/compare/v0.10.0...HEAD
-[0.10.0]: https://github.com/rttfd/nanofish/compare/v0.9.1...v0.10.0
+[Unreleased]: https://github.com/rttfd/nanofish/compare/v0.11.1...HEAD
+[0.11.1]: https://github.com/rttfd/nanofish/compare/v0.11.0...v0.11.1
+[0.11.0]: https://github.com/rttfd/nanofish/compare/v0.10.0...v0.11.0
 [0.9.1]: https://github.com/rttfd/nanofish/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/rttfd/nanofish/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/rttfd/nanofish/compare/v0.7.0...v0.8.0

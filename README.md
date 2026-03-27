@@ -31,7 +31,7 @@ Nanofish is designed for embedded systems with limited memory. It provides a sim
 ### Basic HTTP Support (Default)
 ```toml
 [dependencies]
-nanofish = "0.11.0"
+nanofish = "0.11.1"
 ```
 
 ### With TLS/HTTPS Support
@@ -102,7 +102,7 @@ async fn example(stack: &Stack<'_>) -> Result<(), nanofish::Error> {
 let client = DefaultHttpClient::new(unsafe { core::ptr::NonNull::dangling().as_ref() });
 let mut response_buffer = [0u8; 8192];
 let headers = [
-    HttpHeader::user_agent("Nanofish/0.11.0"),
+    HttpHeader::user_agent("Nanofish/0.11.1"),
     HttpHeader::content_type(mime_types::JSON),
     HttpHeader::authorization("Bearer token123"),
 ];
